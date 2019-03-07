@@ -53,8 +53,9 @@ body {
 
 .profile-container {
   position: absolute;
+  padding: 20px;
   left: 100px;
-  top: 30%;
+  top: 35%;
   min-width: 400px;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-size: 24px;
@@ -89,6 +90,7 @@ body {
   animation: fade-in-right ease-in-out 1s forwards;
   animation-delay: 0.8s;
   font-size: 15px;
+  font-family: "monserrat";
   width: 350px;
 }
 .profile-content a button {
