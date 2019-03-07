@@ -1,2 +1,2 @@
-# AdeogoAdejana.github.io
+# hardecx.github.io
 Repo for personal website
