@@ -54,7 +54,7 @@ body {
 .profile-container {
  position: absolute;
   left: 100px;
-  top: 45%;
+  top: 35%;
   width: 35%;
   min-width: 250px
   font-family: "Roboto", "Open Sans", sans-serif;
@@ -91,7 +91,6 @@ body {
   animation-delay: 0.8s;
   font-size: 15px;
   font-family: "monserrat";
-  width: 350px;
   color: #e6d6e5;
   font-size: 15px;
 }
