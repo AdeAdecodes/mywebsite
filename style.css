@@ -54,9 +54,9 @@ body {
 .profile-container {
  position: absolute;
   left: 100px;
-  top: 35%;
+  top: 25%;
   width: 35%;
-  min-width: 250px
+  min-width: 250px;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-size: 24px;
   color: white;
