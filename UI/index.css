@@ -175,6 +175,7 @@ section span {
   }
 #content {
   z-index: 1;
+}
   main {
     background-color: #ffffff;
     color: rgb(8, 8, 8);
