@@ -60,7 +60,7 @@ main {
   border-bottom: 5px solid #393399;
 }
 .content {
-  max-width: 640px;
+  max-width: 550px;
   text-align: justify;
 }
 
@@ -69,7 +69,7 @@ main h2 {
   font-family: "Raleway", serif;
   line-height: 60px;
   margin-bottom: 30px;
-  font-size: 2.625rem;
+ font-size: 2.3rem
 }
 main button {
   background: transparent;
@@ -158,7 +158,7 @@ section span {
     cursor: pointer;
     margin: 19px auto;
     padding: 6px;
-    width: 100px;
+    width:80px;
     border: none;
     background: #ffff;
     color: #000;
