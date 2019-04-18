@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .header {
   display: flex;
   background: #393399;
@@ -168,7 +169,7 @@ section span {
       0 10px 10px rgba(0, 0, 0, 0.2);
   }
   .register .signup {
-    margin-left: 75px;
+    margin-left: 120px;
   }
   main {
     background-color: #ffffff;
@@ -179,14 +180,14 @@ section span {
   .content {
     text-align: justify;
     height: 350px;
-    margin: 90px 50px 0px 10px;
+    margin: 120px 50px 0px 10px;
     text-align: justify;
   }
   main h2 {
     color: #ffffff;
     font-family: "Raleway", serif;
     line-height: 50px;
-    font-size: 2.5ex;
+    font-size: 3.0ex;
     margin-bottom: 5px;
   }
   main button {
@@ -198,7 +199,7 @@ section span {
     color: #ffffff;
     font-size: 15px;
     font-family: "Raleway", serif;
-    border-radius: 20px
+    border-radius: 20px;
     line-height: 32px;
     text-align: center;
     font-weight: 350;
@@ -222,7 +223,7 @@ section span {
     text-align: center;
     font-size: 17px;
     font-weight: bold;
-    color: #000;
+    color: #ffff;
   }
 
   .footer p:hover {
