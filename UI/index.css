@@ -141,6 +141,8 @@ section span {
     height: inherit;
     margin-top: 10px;
     font-size: 70%;
+    top: 0;
+    z-index: 10;
     margin-left: 0px;
   }
   .header h2 {
@@ -171,6 +173,8 @@ section span {
   .register .signup {
     margin-left: 120px;
   }
+#content {
+  z-index: 1;
   main {
     background-color: #ffffff;
     color: rgb(8, 8, 8);
