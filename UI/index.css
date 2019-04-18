@@ -1,0 +1,231 @@
+body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  background: #393399;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  height: 60px;
+  position: sticky;
+  border-bottom: 1px solid #393399;
+}
+.header .logo {
+  display: flex;
+  width: 11%;
+  height: inherit;
+  margin-left: 10px;
+}
+.header h2 {
+  color: #ffffff;
+}
+.register {
+  display: flex;
+  margin-left: 60%;
+  justify-content: space-between;
+  width: 20%;
+  font-family: "Ubuntu", sans-serif;
+}
+.register a button {
+  cursor: pointer;
+  margin: 15px auto;
+  padding: 6px;
+  width: 100px;
+  border: none;
+  background: #ffffff;
+  color: #000;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(21, 170, 224, 0.2),
+    0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.register .signup {
+  margin-right: 10px;
+}
+#content {
+  z-index: 1;
+}
+main {
+  padding: 70px;
+  clear: both;
+  background-image: url("tower.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  background-size: cover;
+  color: rgb(8, 8, 8);
+  border-bottom: 5px solid #393399;
+}
+.content {
+  max-width: 640px;
+  text-align: justify;
+}
+
+main h2 {
+  color: white;
+  font-family: "Raleway", serif;
+  line-height: 60px;
+  margin-bottom: 30px;
+  font-size: 2.625rem;
+}
+main button {
+  background: transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 10px;
+  width: 284px;
+  height: 62px;
+  background: #393399;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 62px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.grid {
+  background: #ffffff;
+  color: #393399;
+  text-align: center;
+}
+.box {
+  margin-top: 20px;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  width: 28%;
+  margin-left: 1%;
+  border: 3px solid #393399;
+}
+section {
+  margin-bottom: 450px;
+}
+section span {
+  font-size: 2em;
+}
+.footer {
+  grid-column: span 13;
+  grid-row: 1;
+  height: 60px;
+  position: sticky;
+  background: #393399;
+  border: 3px solid #393399;
+}
+.footer p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #000;
+}
+
+.footer p:hover {
+  color: #ffff;
+}
+
+@media (max-width: 550px) {
+  .header {
+    display: flex;
+    background: #393399;
+    height: 60px;
+    position: sticky;
+  }
+  .header .logo {
+    display: flex;
+    height: inherit;
+    margin-top: 10px;
+    font-size: 70%;
+    margin-left: 0px;
+  }
+  .header h2 {
+    color: #ffffff;
+    margin-top: 15px;
+  }
+  .register {
+    display: flex;
+    margin-left: 10%;
+    justify-content: space-between;
+    width: 10%;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .register a button {
+    cursor: pointer;
+    margin: 19px auto;
+    padding: 6px;
+    width: 100px;
+    border: none;
+    background: #ffff;
+    color: #000;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(21, 170, 224, 0.2),
+      0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  .register .signup {
+    margin-left: 75px;
+  }
+  main {
+    background-color: #ffffff;
+    color: rgb(8, 8, 8);
+    height: 550px;
+    padding: 10px;
+  }
+  .content {
+    text-align: justify;
+    height: 350px;
+    margin: 90px 50px 0px 10px;
+    text-align: justify;
+  }
+  main h2 {
+    color: #ffffff;
+    font-family: "Raleway", serif;
+    line-height: 50px;
+    font-size: 2.5ex;
+    margin-bottom: 5px;
+  }
+  main button {
+    background: transparent;
+    max-width: 200px;
+    height: 38;
+    padding: 0px 5px 5px 5px;
+    background: #393399;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Raleway", serif;
+    border-radius: 20px
+    line-height: 32px;
+    text-align: center;
+    font-weight: 350;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  section {
+    margin-bottom: 10px;
+  }
+  section span {
+    font-size: 1em;
+  }
+  .box {
+    float: none;
+    text-align: center;
+    width: 70%;
+    margin-left: 40px;
+  }
+  .footer p {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .footer p:hover {
+    color: #ffff;
+  }
+}
