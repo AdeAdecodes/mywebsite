@@ -184,7 +184,7 @@ section span {
   }
   .content {
     text-align: justify;
-    height: 350px;
+    width: 350px;
     margin: 120px 50px 0px 10px;
     text-align: justify;
   }
