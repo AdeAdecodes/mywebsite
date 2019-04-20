@@ -1,0 +1,233 @@
+/*border box allows us to add padding and border to our elements without increasing their size */
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #36405e;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  font: 15px/1.5 "Lato", Helvetica, sans-serif;
+  grid-template-rows: 20vh auto 20em;
+  grid-template-areas:
+    "banner"
+    "features"
+    "footer";
+}
+
+/* Global */
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.button_primary {
+  height: 35px;
+  background: #dfe7fd;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #36405e;
+  border: 1px solid #36405e;
+}
+.button_primary:hover {
+  background-color: #36405e;
+  color: #fdfeff;
+}
+/**** Home ****/
+/* Banner */
+.header {
+  display: flex;
+  background: #dfe7fd;
+  height: 60px;
+  position: sticky;
+  border-bottom: 1px solid#dfe7fd;
+}
+
+.header .logo {
+  display: flex;
+  width: 11%;
+  height: inherit;
+  margin-left: 10px;
+  color: #36405e;
+  margin-top: 5px;
+}
+.logo h2 {
+  margin: 10px 0 0 0;
+  color: #36405e;
+}
+
+.register {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+}
+.register a {
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 15px;
+  border: 0.5px solid #36405e;
+  color: #36405e;
+  font: 15px/1.5 "Lato", Helvetica, sans-serif;
+}
+.register a:hover {
+  background-color: #36405e;
+  color: #fdfeff;
+}
+.register .signup {
+  background-color: #36405e;
+  color: #dfe7fd;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  align-self: center;
+  padding: 10px;
+  margin-top: 5em;
+  color: #36405e;
+  background-color: #dfe7fd;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/**** Form-box ****/
+#form-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: ". form-box .";
+  grid-gap: 3em;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#form-box form {
+  grid-area: form-box;
+  justify-self: center;
+  background-color: #dfe7fd;
+}
+
+#form-box label.label-box {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+#form-box input,
+#form-box button,
+#form-box select {
+  width: 80%;
+  padding: 8px;
+  margin-top: 1em;
+}
+
+#form-box form h1 {
+  font-size: 2em;
+  font-weight: 100;
+  color: #36405e;
+}
+
+#form-box form a {
+  color: #36405e;
+}
+
+/**** Alert-box ****/
+.alert {
+  width: 80%;
+  line-height: 38px;
+  margin: auto;
+  text-align: center;
+  color: var(--white);
+}
+
+.alert-message {
+  background: #dfe7fd;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.alert-success {
+  background: #5fba7d;
+}
+
+.alert-error {
+  background: #b00020;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+  .container.title-bar {
+    grid-template-rows: 2em 70vh 3em;
+  }
+
+  .header {
+    display: flex;
+    height: 60px; 
+    position: sticky;
+    background: #dfe7fd;
+  }
+
+  .header .logo {
+    display: flex;
+    width: 11%;
+    height: inherit;
+    font-size: 60%;
+    color: #36405e;
+  }
+  .header h2 {
+    margin-top: 20px;
+  }
+  .register {
+    display: flex;
+    margin-left: 32%;
+  }
+
+  .register a {
+    cursor: pointer;
+    margin: 17px;
+    padding: 5px;
+    height: 30px;
+    border: 0.5px solid #36405e;
+    color: #36405e;
+    font: 15.5px/1.5 "Lato", Helvetica, sans-serif;
+  }
+  .register a:hover {
+    background-color: #36405e;
+    color: #fdfeff;
+  }
+  .register .signup {
+    background-color: #36405e;
+    color: #dfe7fd;
+  }
+
+  #form-box {
+    grid-template-columns: 1fr;
+    grid-template-areas: "form-box";
+  }
+  #form-box form h1 {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #dfe7fd;
+  }
+  #form-box form {
+    grid-area: form-box;
+    justify-self: center;
+    background-color: #36405e;
+  }
+}
