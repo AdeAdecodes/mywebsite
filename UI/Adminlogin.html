@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quickcredit | Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="formbox.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/bubbles/50/000000/cash-in-hand.png"/>
+</head>
+<body>
+    <div class="container title-bar">
+        <!-- Title bar -->
+        <div class="banner">
+                <header class="header">
+                        <a class="logo" href="Index.html">
+                          <span id="logo-icon">
+                            <img
+                              src="https://img.icons8.com/bubbles/50/000000/cash-in-hand.png"
+                            />
+                          </span>
+                          <h2>Quickcredit</h2>
+                        </a>
+                
+                        <div class="register">
+                          <a class="signup" href="signup.html">User</a>
+                          <a class="signin" href="Adminlogin.html">Admin</a>
+                        </div>
+                      </header>
+        </div>
+        <!-- End of title bar -->
+        <!-- Login form -->
+        <section id='form-box'>
+            <form action="staffdashboard.html">
+                <h1>Administrator Login</h1>                
+                <div class="alert">
+                </div>                
+                <select name="" id="adminrole" required>
+                    <option disabled>Select Type</option>
+                    <option value='admin'>Admin</option>
+                </select>
+                <input type="email" placeholder="Email Address" id="adminemail" required>
+                <input type="password" placeholder="Password" id="adminpass" required>
+                <button class="button_primary" id="adminlogin">Sign in</button>
+                <p><a href="forgotpassword.html" >Forgot password</a></p>
+            </form>
+        </section>
+        <!-- End of login form -->
+        <!-- Footer -->
+        <footer>
+            <p>Copyright &copy; 2019 Quickcredit</p>
+        </footer>
+        <!-- End of footer -->
+    <div>    
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
