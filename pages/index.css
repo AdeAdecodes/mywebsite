@@ -64,6 +64,9 @@ body {
     background-color: #dfe7fd;
     color: #36405e;
   }
+  .register .signin {
+   margin-right: 5px;
+  }
   .register a:hover {
     background-color: #dfe7fd;
     color: #36405e;
