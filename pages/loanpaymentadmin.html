@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signin.dash.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/bubbles/50/000000/cash-in-hand.png"
+    />
+    <title>Quickcredit | Dashboard</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <a class="logo" href="Index.html">
+          <span id="logo-icon">
+            <img
+              src="https://img.icons8.com/bubbles/50/000000/cash-in-hand.png"
+            />
+          </span>
+          <h2>Quickcredit</h2>
+        </a>
+                <div class="header__user">
+                <a><img src="https://img.icons8.com/material-two-tone/24/000000/new-post.png"></a> 
+                  <img class="user__image" src="home 222.jpg" alt="#0">
+                      <div class="dropdown">
+                         <p class="dropbtn">Administrator
+                            <img src="icon.png" />
+                         </p>
+                             <div class="dropdown-content">
+                                    <a href="Dashboardadmin.html">Return to Dashboard</a>
+                                    <a href="report.html">Reports</a>
+                                    <a href="createadmin.html">Create Administrator</a>
+                                    <a href="Index.html">Logout</a>
+                                    </div>
+                         </div> 
+                </div>
+      </header>
+        <!-- End of title bar -->
+     
+        <!-- Account table -->
+        <section id="box-tables">
+            <div class="full-table">
+                <h1>Loan Payment</h1>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                            <td>Username</td>
+                            <th>Amount paid (₦)</th>
+                            <th>Mode of payment</th>
+                            <th>Payment Status</th>
+                        </tr>
+                        <tr>
+                            <td>001</td>
+                            <td>29-Jan-2019</td>
+                            <td>Jimi Agbaje</td>
+                            <td>1,055</td>
+                            <td>Bank Transfer</td>
+                            <td> <button class="button_success" id="activateAccount">Approved Payment</button></td>
+                        </tr>
+                        <tr>
+                            <td>001</td>
+                            <td>29-Jan-2019</td>
+                            <td>Jimi Agbaje</td>
+                            <td>1,055</td>
+                            <td>Bank Transfer</td>
+                            <td> <button class="button_success" id="activateAccount">Approved Payment</button></td>
+                        </tr>
+                        <tr>
+                             <td>001</td>
+                            <td>29-Jan-2019</td>
+                            <td>Jimi Agbaje</td>
+                            <td>1,055</td>
+                            <td>Bank Transfer</td>
+                            <td> <button class="button_success" id="activateAccount">Approved Payment</button></td>
+                        </tr>
+                        <tr>
+                                <td>001</td>
+                                <td>29-Jan-2019</td>
+                                <td>Jimi Agbaje</td>
+                                <td>1,055</td>
+                                <td>Bank Transfer</td>
+                                <td> <button class="button_success" id="activateAccount">Approved Payment</button></td>
+                        </tr>
+                        <tr>
+                                <td>001</td>
+                                <td>29-Jan-2019</td>
+                                <td>Jimi Agbaje</td>
+                                <td>1,055</td>
+                                <td>Bank Transfer</td>
+                                <td> <button class="button_success" id="activateAccount">Approved Payment</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <div id="activate-account">
+                <div class="modal-box">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Confirmation</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to confirm this payment?</p>
+                        </div>                
+                        <div class="modal-footer">
+                            <button class="button_success" id='positiveActivate'><a href="">Yes</a></button>
+                            <button class="button_danger" id='negativeActivate'><a href="#">No</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End of Account table -->
+        <!-- Footer -->
+        <div class="footer">
+                <p>Copyright &copy; 2019 Quickcredit</p>
+              </div>
+        <!-- End of footer -->
+    <div>
+        <script>
+            const activateAccount = document.getElementById(`activateAccount`);
+  if (activateAccount) {
+    activateAccount.addEventListener('click', () => {
+      document.getElementById('activate-account').style.display = 'block';
+    });
+  }
+
+if (positiveActivate) {
+  positiveActivate.addEventListener('click', () => {
+    document.getElementById('activate-account').style.display = 'none';
+    document.getElementById('deactivate-account').style.display = 'none';
+  });
+}
+
+if (negativeActivate) {
+  negativeActivate.addEventListener('click', () => {
+    document.getElementById('activate-account').style.display = 'none';
+    document.getElementById('deactivate-account').style.display = 'none';
+  });
+}
+            </script>
+</body>
+</html>
