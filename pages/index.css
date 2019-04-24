@@ -183,7 +183,7 @@ body {
   a {
     text-decoration: none;
   }
-  .header {
+ .header {
     display: flex;
     background: #36405e;
     width: 100%;
@@ -195,18 +195,25 @@ body {
   .header .logo {
     display: flex;
     height: inherit;
-    width: 11%;
-    font-size: 60%;
+    width: 50%;
+    font-size: 50%;
   }
   .header h2 {
     color: #dfe7fd;
-    margin-top: 10px;
+    margin-top: -24px;
+    margin-left: 30px;
+    margin-right: 33px;
+  }
+  .header img {
+    margin-top: 5px;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
   }
   .register {
     display: flex;
-    margin-left: 32%;
+    margin-left: 15%;
   }
-
   .register a {
     cursor: pointer;
     margin: 19px;
